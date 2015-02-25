@@ -1,0 +1,18 @@
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.dashboard {
+	@extend %clearfix;
+	height: 100%;
+}
+
+.dashboard__content {
+	width: 72%;
+	height: 100%;
+	float: left;
+}

@@ -1,5 +1,6 @@
-<h1>Dash#index</h1>
-<a href="#" class="button">Explore</a>
+<h1>Manage Bookmarks</h1>
+<ul>
 <% @dashboard.bookmarks.each do |bookmark| %>
-	<%= bookmark %>
+	<li><%= link_to bookmark.title, bookmark.url %></li>
 <% end %>
+</ul>

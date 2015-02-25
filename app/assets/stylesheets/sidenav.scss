@@ -1,0 +1,27 @@
+.sidenav {
+	background: darken(#FCFCFC, 4%);
+	width: 28%;
+	height: 100%;
+	float: left;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			a {
+				font-size: 90%;
+				background: darken(#FCFCFC, 8%);
+				color: inherit;
+				display: block;
+				text-decoration: none;
+				padding: 1.5em;
+
+				&:hover {
+					background: darken(#FCFCFC, 12%);
+				}
+			}
+		}
+	}
+}
