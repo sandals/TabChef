@@ -1,0 +1,59 @@
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.bookmark__card {
+	@extend %clearfix;
+	margin-bottom: 1em;
+}
+
+.bookmark__icon {
+	float: left;
+	width: 10%;
+
+	img {
+		width: 100%;
+		border-radius: 3px;
+	}
+}
+
+.bookmark__title {
+	float: left;
+	width: 90%;
+
+	a {
+		display: block;
+		background: #F0F0F6;
+		border-radius: 3px;
+		color: inherit;
+		text-decoration: none;
+		padding: 1em;
+		margin-left: 0.5em;
+
+		&:hover {
+			background: darken(#F0F0F6, 5%);
+		}
+	}
+}
+
+.bookmark__props {
+	border-radius: 3px;
+	padding: 0.5em;
+	margin-left: 0.5em;
+
+	input[type="text"] {
+		margin-top: 0.5em;
+		padding: 0.3em;
+		margin-right: 0.5em;
+		border-radius: 3px;
+		border: 1px solid darken(#F0F0F6, 10%);
+	}
+
+	button {
+		width: 20%;
+	}
+}

@@ -1,6 +1,15 @@
-<h1>Manage Bookmarks</h1>
-<ul>
+<h1 class="dashboard__heading">Bookmarks</h1>
 <% @dashboard.bookmarks.each do |bookmark| %>
-	<li><%= link_to bookmark.title, bookmark.url %></li>
+	<div class="bookmark__card">
+		<div class="bookmark__icon">
+			<img src="https://d13yacurqjgara.cloudfront.net/assets/apple-touch-icon-precomposed-3b679774c9ebcd1812533270fc155f61.png">
+		</div>
+		<div class="bookmark__title">
+			<a href="#" onclick="show_url('<%= bookmark.title.parameterize %>')"><%= bookmark.title %></a>
+			<div id="<%= bookmark.title.parameterize %>" class="bookmark__props">
+				<input type="text" value="<%= bookmark.title %>">
+				<input type="text" value="<%= bookmark.url %>">
+			</div>
+		</div>
+	</div>
 <% end %>
-</ul>

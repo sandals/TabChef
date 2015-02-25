@@ -2,10 +2,12 @@ $default-bg: #C3C3CE;
 $default-color: #FFFFFF;
 
 $primary-bg: #3786BF;
+$positive-bg: #37BF3F;
 
 .button {
 	color: $default-color;
 	background: $default-bg;
+	border: 0;
 	border-bottom: 2px solid darken($default-bg, 10%);
 	border-radius: 3px;
 	text-decoration: none;
@@ -24,5 +26,15 @@ $primary-bg: #3786BF;
 	&:hover {
 		background: darken($primary-bg, 10%);
 		border-bottom: 2px solid darken($primary-bg, 20%);
+	}
+}
+
+.button--positive {
+	background: $positive-bg;
+	border-bottom: 2px solid darken($positive-bg, 10%);
+
+	&:hover {
+		background: darken($positive-bg, 10%);
+		border-bottom: 2px solid darken($positive-bg, 20%);
 	}
 }
