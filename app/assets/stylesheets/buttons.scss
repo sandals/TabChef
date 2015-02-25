@@ -1,0 +1,28 @@
+$default-bg: #C3C3CE;
+$default-color: #FFFFFF;
+
+$primary-bg: #3786BF;
+
+.button {
+	color: $default-color;
+	background: $default-bg;
+	border-bottom: 2px solid darken($default-bg, 10%);
+	border-radius: 3px;
+	text-decoration: none;
+	padding: 4px;
+
+	&:hover {
+		background: darken($default-bg, 10%);
+		border-bottom: 2px solid darken($default-bg, 20%);
+	}
+}
+
+.button--primary {
+	background: $primary-bg;
+	border-bottom: 2px solid darken($primary-bg, 10%);
+
+	&:hover {
+		background: darken($primary-bg, 10%);
+		border-bottom: 2px solid darken($primary-bg, 20%);
+	}
+}

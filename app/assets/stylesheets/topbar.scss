@@ -1,0 +1,36 @@
+$grey-blue: #282931;
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.topbar {
+	@extend %clearfix;
+
+	background: $grey-blue;
+	color: white;
+
+	.tabchef_identity {
+		float: left;
+		font-size: 140%;
+		font-weight: bold;
+		padding: 1em;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+	.user_auth {
+		float: right;
+		padding: 1.6em;
+		
+		.user_auth__email {
+			margin-right: 0.6em;
+		}
+	}
+}
